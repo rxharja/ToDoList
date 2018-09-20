@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Practical Todos</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Todo List</h1>
+
+      <div id="bar">
+        <button onclick="handlers.toggleAll()"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
+        <input id="addTodoTextInput" type="text" onkeydown="utilizeEnter('addButton')" placeholder="Add New Todo" >
+        <button onclick="handlers.addTodo()" id="addButton"><i class="fa fa-play" aria-hidden="true"></i></button>
+        <button onclick="handlers.sortCompleted()">Sort</button>
+      </div>
+
+      <ul id="todoUl">
+      </ul>
+
+      <div id="menu">
+      </div>
+  </div>
+    <script src="client.js"></script>
+  </body>
+</html>
+
+
+
+
